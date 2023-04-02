@@ -5,7 +5,7 @@ import "./ErrorModal.css";
 
 const ErrorModal = (props) => {
   return (
-    <div className="backdrop">
+    <div className="backdrop" onClick={props.onClick}>
       <Card className="modal">
         <header className="header">
           <h2>{props.title}</h2>
